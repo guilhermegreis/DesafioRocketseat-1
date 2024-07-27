@@ -39,22 +39,32 @@
 
 .typingTask {
     background: #333333;
+    color: #808080;
 
+    height: 0.5rem;
     width: 50%;
     padding: 20px;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.typingTask:focus {
+    border: none;
 }
 
 .createButton {
     font-family: 'Inter';
     color: #F2F2F2;
     font-weight: bold;
-    padding: 20px;
     background: #1E6F9F;
     border: none;
-    border-radius: 3px;
-
+    border-radius: 10px;
+    width: 5rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 5px;
 }
 

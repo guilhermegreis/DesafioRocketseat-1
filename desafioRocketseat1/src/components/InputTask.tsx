@@ -1,5 +1,6 @@
 import styles from "./InputTask.module.css";
 import ToDoLogo from "../assets/ToDoLogo.svg";
+import { PlusCircle } from "phosphor-react";
 
 export function InputTask() {
   return (
@@ -15,7 +16,7 @@ export function InputTask() {
           placeholder="Adicione uma tarefa"
           className={styles.typingTask}
         />
-        <button className={styles.createButton}>Criar</button>
+        <button className={styles.createButton}>Criar <PlusCircle size={19} weight="bold" style={{ marginLeft: '3px'}}/></button>
       </div>
     </div>
   );
