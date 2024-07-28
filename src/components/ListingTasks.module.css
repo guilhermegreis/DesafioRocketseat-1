@@ -1,0 +1,125 @@
+.backgroundList {
+    background: #262626;
+    height: calc(100vh - 12.5rem);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.createdCompletedTasks {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+
+    margin-top: 10rem;
+    color: #1E6F9F;
+    font-weight: bold;
+    font-family: 'Inter';
+}
+
+.createdTasks {
+    color: #4EA8DE;
+}
+
+.completedTasks {
+    color: #8284FA;
+}
+
+.createdTasks::after {
+    content: "";
+    display: block;
+    width: 58%;
+    height: 2px;
+    position: absolute;
+    margin-top: 0.759rem;
+    background-color: #808080;
+}
+
+.noTasksCreated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    color: #808080;
+    font-family: 'Inter';
+}
+
+.noTasks {
+    font-weight: bold;
+}
+
+.taskItem {
+    background: #333;
+    border: 1px solid #808080;
+    color: #F2F2F2;
+    padding: 1rem;
+    border-radius: 0.750rem;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.taskItem.completed {
+    text-decoration: line-through;
+}
+
+.taskList {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 3rem;
+    margin-left: 30rem;
+    list-style: none;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #4EA8DE;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+  
+.checked {
+    background: #5E60CE;
+    border: 2px solid #5E60CE;
+}
+
+.deleteButton {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #808080;
+    font-weight: bold;
+}
+
+.deleteButton:hover {
+    color: #6c6c6c;
+}
+
+.numberOfCompletedTasks {
+    background: #333333;
+    color: #D9D9D9;
+    border-radius: 0.75rem;
+    padding: 0.3rem;
+    width: 100%;
+}
+
+.numberOfCreatedTasks {
+    background: #333333;
+    color: #D9D9D9;
+    border-radius: 0.75rem;
+    padding: 0.3rem;
+    width: 100%;
+}
