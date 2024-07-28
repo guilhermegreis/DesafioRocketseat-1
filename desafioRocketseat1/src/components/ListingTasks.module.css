@@ -1,0 +1,36 @@
+.backgroundList {
+    background: #262626;
+    height: calc(100vh - 12.5rem);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.createdCompletedTasks {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+
+    margin-top: 10rem;
+    color: #1E6F9F;
+    font-weight: bold;
+    font-family: 'Inter';
+}
+
+.createdTasks {
+    color: #4EA8DE;
+}
+
+.completedTasks {
+    color: #8284FA;
+}
+
+.createdTasks::after {
+    content: "";
+    display: block;
+    width: 56%;
+    height: 2px;
+    position: absolute;
+    margin-top: 2rem;
+    background-color: #808080;
+}
